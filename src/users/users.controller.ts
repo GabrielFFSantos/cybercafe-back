@@ -6,7 +6,7 @@ export class UserController {
   constructor(private readonly userService: UserService) {}
 
   @Get()
-  async createUser(): Promise<string> {
-    return await this.userService.createUser();
+  async createUser() {
+    return await this.userService.readUsers();
   }
 }
